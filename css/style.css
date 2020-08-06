@@ -120,10 +120,10 @@ body {
 
 .rocket {
     position: absolute;
-    top: 350px;
+    top: 150px;
     right: 100px;
     z-index: 99;
-    width: 350px;
+    max-width: 260px;
 }
 
 .colortext {
@@ -134,48 +134,165 @@ body {
     padding-left: 100px;
 }
 
-.logo-down {
-    display: block;
-    margin: auto;
-    margin-bottom: 50px;
+.footer {
+    padding: 130px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 
-.item-link-down {
+.footer-nav .item-link {
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    color: #ffffff;
+}
+
+.footer .logo {
+    margin-bottom: 43px;
+}
+
+.footer-nav {
+    margin-bottom: 28px;
+}
+
+.footer-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #808080;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #808080;
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
-.down-nav {
-    max-width: 544px;
-    width: 90%;
-    display: block;
-    margin: auto;
-}
-
-.down-text {
-    color: grey;
+.button {
+    /* display: flex; отобразить по горизонтали
+    align-items: center; расположить по вертикали по центру
+    justify-content: center; расположить по горизонтали по центру */
+    color: #fff;
+    text-decoration: none;
+    min-width: 260px;
+    /*минимальная ширина для кнопки(рамки)*/
+    min-height: 60px;
+    /*минимальная высота для кнопки (рамки)*/
     text-align: center;
-    padding-bottom: 30px;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    /*оформление рамки*/
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 30px;
 }
 
-.rectangle {
-    display: block;
-    margin: auto;
-    margin-bottom: 70px;
+@media (max-width: 1045px) {
+    .rocket {
+        max-width: 200px;
+        top: 500px;
+    }
+    .table-column {
+        width: 250px;
+    }
 }
 
-.follow-us {
-    position: relative;
-    bottom: 110px;
-    /* margin-left: 555px; */
-    text-align: center;
+@media (max-width: 960px) {
+    .rocket {
+        max-width: 150px;
+        top: 900px;
+    }
+}
+
+@media (max-width: 880px) {
+    .rocket {
+        max-width: 120px;
+        top: 1200px;
+        right: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header .logo {
+        margin-bottom: 20px;
+    }
+    .header .main-nav {
+        margin-bottom: 20px;
+    }
+    .rocket {
+        max-width: 120px;
+        position: absolute;
+        top: 1000px;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+    .table-column {
+        font-size: 14px;
+        width: 150px;
+    }
+    .footer-nav .list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-nav .item {
+        margin-bottom: 10px;
+    }
+    .footer {
+        text-align: center;
+    }
+    .main {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .rocket {
+        position: absolute;
+        margin-bottom: 30px;
+        top: 1200px;
+        max-width: 80px;
+    }
+    .table {
+        margin-bottom: 0;
+    }
+    .table-column {
+        font-size: 14px;
+        width: 150px;
+    }
+    .footer-nav .list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-nav .item {
+        margin-bottom: 10px;
+    }
+    .footer {
+        text-align: center;
+    }
+    .main {
+        padding-top: 50px;
+    }
+    .features-text {
+        text-align: center;
+        max-width: 320px;
+    }
+    .features-title {
+        text-align: center;
+        max-width: 320px;
+    }
 }
