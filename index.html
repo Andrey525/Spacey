@@ -4,6 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/vidbg.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down" data-aos-duration="500">
         <img src="img/logo2.png" alt="Logo Space X" class="logo" />
         <nav class="main-nav">
             <ul class="list">
@@ -44,18 +45,20 @@
         </nav>
     </header>
     <section class="main">
-        <h1 class="title">Falcon Heavy</h1>
-        <p class="description">
+        <h1 class="title" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
+            Falcon Heavy
+        </h1>
+        <p class="description" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
             The most powerful operational rocket in the world by a factor of two
         </p>
     </section>
-    <div class="video"></div>
+    <div class="video" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000"></div>
     <section class="features">
         <div class="overview">
-            <h2 class="features-title">
+            <h2 class="features-title" data-aos="fade-right" data-aos-duration="1000">
                 Falcon Heavy <br /> Overview
             </h2>
-            <table class="table">
+            <table class="table" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                 <tr>
                     <td class="table-column">HEIGHT</td>
                     <td class="table-column">
@@ -93,14 +96,14 @@
                     </td>
                 </tr>
             </table>
-            <h2 class="features-title">
+            <h2 class="features-title" data-aos="flip-up" data-aos-duration="500">
                 UNMATCHED <br /> PERFORMANCE
             </h2>
-            <p class="features-text">
+            <p class="features-text" data-aos="flip-down" data-aos-duration="1000">
                 With more than 5 million pounds of thrust at liftoff, Falcon Heavy is the most capable rocket flying. By comparison, the liftoff thrust of the Falcon Heavy equals approximately eighteen 747 aircraft at full power. Falcon Heavy can lift the equivalent
                 of a fully loaded 737 jetliner—complete with passengers, luggage and fuel—to orbit.
             </p>
-            <img src="img/falcon-heavy.png" alt="rocket" class="rocket" data-rellax-speed="14" />
+            <img src="img/falcon-heavy-flame.png" alt="rocket" class="rocket" data-rellax-speed="14" data-aos="fade-up" data-aos-duration="3000" />
         </div>
     </section>
     <footer class="footer">
@@ -127,6 +130,7 @@
     <script src="js/vidbg.js"></script>
     <script src="js/rellax.min.js"></script>
     <script src="js/rellax.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 

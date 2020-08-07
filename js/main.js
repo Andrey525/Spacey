@@ -6,3 +6,5 @@ var instance = new vidbg('.video', {
 });
 
 var rellax = new Rellax('.rocket');
+
+AOS.init();

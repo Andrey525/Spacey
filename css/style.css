@@ -120,7 +120,7 @@ body {
 
 .rocket {
     position: absolute;
-    top: 150px;
+    top: 250px;
     right: 100px;
     z-index: 99;
     max-width: 260px;
